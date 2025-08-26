@@ -350,11 +350,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.87
+      value: -4.52
       objectReference: {fileID: 0}
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -392,8 +392,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fish
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2947447428399476236, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action
+      value: 
+      objectReference: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _dotObject
+      value: 
+      objectReference: {fileID: 3949969867771504880, guid: 0382662e24792464a83ec616ad9558c2, type: 3}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action.m_Name
+      value: Action
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _wanderDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 0ac2a038-ed14-487a-a709-972fbbcf95d0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/f
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Action
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

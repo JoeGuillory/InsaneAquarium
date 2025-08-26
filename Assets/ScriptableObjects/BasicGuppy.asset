@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: BasicGuppy
   m_EditorClassIdentifier: Assembly-CSharp::FishBase
   FoodType: 0
+  _stats:
+    Health: 5
+    Speed: 4

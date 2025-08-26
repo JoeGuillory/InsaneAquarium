@@ -3,20 +3,19 @@ using UnityEngine;
 public class FishWanderState : FishBaseState
 {
     Vector3 _newPosition;
-    bool _hasReachedPositon;
-
+    bool _hasReachedPositon = false;
+  
     public FishWanderState(FishStateMachine currentContect, FishStateFactory fishStateFactory):base(currentContect, fishStateFactory)
     {
     }
     public override void EnterState()
     {
-       
+        GetNewPosition();
     }
     public override void UpdateState()
     {
         CheckSwitchStates();
-
-
+        _ctx._dotObject.transform.position = _newPosition;
     }
     public override void FixedUpdateState()
     {
@@ -36,12 +35,14 @@ public class FishWanderState : FishBaseState
 
     private void MoveToNewPosition()
     {
-
+        Vector3 direction = (_newPosition - _ctx.transform.position).normalized;
     }
 
-    private void GetNewPosition()
+    public void GetNewPosition()
     {
-        _newPosition = (Vector3)UnityEngine.Random.insideUnitCircle * _ctx.WanderDistance + _ctx.transform.position;
+        Vector3 randompoint = Random.insideUnitCircle.normalized;
+        float distance = Random.Range(.5f, _ctx.MaxWanderDistance);
+        _newPosition = randompoint * distance + _ctx.transform.position;
     }
 
 
