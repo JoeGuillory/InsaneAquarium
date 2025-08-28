@@ -15,4 +15,4 @@ MonoBehaviour:
   FoodType: 0
   _stats:
     Health: 5
-    Speed: 4
+    Speed: 2

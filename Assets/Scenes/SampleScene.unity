@@ -392,6 +392,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 7242018826964586926, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242018826964586926, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LinearDamping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: _action
       value: 
@@ -407,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: _wanderDistance
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: _destinationRadius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: _action.m_SingletonActionBindings.Array.size

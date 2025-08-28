@@ -8,6 +8,9 @@ public class FishStateMachine : MonoBehaviour
     float _maxWanderDistance = 3.0f;
 
     [SerializeField]
+    float _destinationRadius = 1.0f;
+
+    [SerializeField]
     private FishBase _fishScriptibleObject;
 
     [SerializeField]
@@ -25,6 +28,7 @@ public class FishStateMachine : MonoBehaviour
     public Rigidbody2D RigidBody { get { return _rb; } } 
     public FishStats FishStats { get { return _fishStats; } }
     public float MaxWanderDistance { get { return _maxWanderDistance; } }
+    public float DestinationRadius { get { return _destinationRadius; } }
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
