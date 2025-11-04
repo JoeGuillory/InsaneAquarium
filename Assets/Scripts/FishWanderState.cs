@@ -38,13 +38,14 @@ public class FishWanderState : FishBaseState
     {
         Vector3 direction = (_newPosition - _ctx.transform.position).normalized;
         float distance = (_newPosition - _ctx.transform.position).magnitude;
-        _ctx.RigidBody.linearVelocity = direction * Mathf.Min(distance / _ctx.DestinationRadius, _ctx.FishStats.Speed);
+        _ctx.RigidBody.linearVelocity = direction * Mathf.Min(distance / _ctx.DestinationRadius, _ctx.FishData.Speed);
 
         if(distance < .1f)
         {
             _hasReachedPositon=true;
             _ctx.RigidBody.linearVelocity = Vector2.zero;
         }
+        
     }
 
     public void GetNewPosition()

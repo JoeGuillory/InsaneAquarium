@@ -18,7 +18,7 @@ public class FishStateMachine : MonoBehaviour
 
     InputAction _interact;
 
-    private FishStats _fishStats;
+    private FishData _fishStats;
     FishBaseState _currentState;
     FishStateFactory _states;
     Rigidbody2D _rb;
@@ -26,7 +26,7 @@ public class FishStateMachine : MonoBehaviour
 
     public FishBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
     public Rigidbody2D RigidBody { get { return _rb; } } 
-    public FishStats FishStats { get { return _fishStats; } }
+    public FishData FishData { get { return _fishStats; } }
     public float MaxWanderDistance { get { return _maxWanderDistance; } }
     public float DestinationRadius { get { return _destinationRadius; } }
     private void Awake()
@@ -35,7 +35,7 @@ public class FishStateMachine : MonoBehaviour
         _states = new FishStateFactory(this);
         _currentState = _states.Wander();
         _currentState.EnterState();
-        _fishStats = _fishScriptibleObject.BaseStats;
+        _fishStats = _fishScriptibleObject.Stats;
         _dotObject = Instantiate(_dotObject);
         _interact = InputSystem.actions.FindAction("Interact");
     }

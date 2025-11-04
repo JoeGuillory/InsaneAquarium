@@ -6,19 +6,27 @@ using UnityEngine;
 public class FishBase : ScriptableObject
 {
     public FoodType FoodType;
-    [SerializeField]
-    private FishStats _stats;
-    public FishStats BaseStats => _stats;
-  
+    public FishData Stats;
+    public FishState CurrentState;
+
 }
 [System.Serializable]
-public struct FishStats
+public struct FishData
 {
     public int Health;
     public float Speed;
 }
 public enum FoodType
 {
-    Pellets = 0,
-    Fish
+    PELLETS = 0,
+    GUPPY
 }
+
+public enum FishState
+{ 
+    IDLE = 0,
+    WANDER
+
+
+}
+
