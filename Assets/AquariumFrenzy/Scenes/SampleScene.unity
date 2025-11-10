@@ -569,11 +569,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.52
+      value: 1.618
       objectReference: {fileID: 0}
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -605,6 +605,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 128884464199037537, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099587017104770203, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099587017104770203, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099587017104770203, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099587017104770203, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099587017104770203, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1513453833554586306, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
@@ -655,7 +675,8 @@ PrefabInstance:
       propertyPath: _action.m_SingletonActionBindings.Array.data[0].m_Action
       value: Action
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8753046290940081525, guid: 62ca0d045ec47fc4d99c7ac2904d32b9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
