@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 128884464199037537}
   - component: {fileID: 7242018826964586926}
   m_Layer: 0
-  m_Name: PF_Fish
+  m_Name: PF_GoldFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
