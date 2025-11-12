@@ -1,24 +1,18 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 public class FishMovement : MonoBehaviour
 {
-   private Vector2 targetposition;
-   private InputAction clickaction;
-   private GameObject target;
-   
-   void Start()
-   {
-      clickaction = InputSystem.actions.FindAction("Click");
-      clickaction.performed += Click;
-      target = transform.Find("TargetPosition").gameObject;
-   }
+    private Vector2 _destination;
+    void Start()
+    { 
+        InputSystem.actions.FindAction("Click").performed += OnClick;
+    }
 
-   void Click(InputAction.CallbackContext context)
-   {
-      
-      targetposition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-      target.transform.position = targetposition;
-   }
-
+    void OnClick(InputAction.CallbackContext context)
+    {
+        _destination = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        print(_destination);
+    }
 
 }
